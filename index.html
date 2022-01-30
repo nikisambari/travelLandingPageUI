@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home-css.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css'><link rel="stylesheet" href="./home-css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css'><link rel="stylesheet" href="./home-css.css">
+
+</head>
+<body>
+   <nav class="navbar">
+        <div class="logo">
+            <h1>Travel</h1>
+        </div>         
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about">About us</a></li>
+            <li class="nav-item"><a href="login.html"><i class="material-icons">person</i></a></li>
+            <li class="nav-item"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+
+        </ul>
+        <div class="mobile-view">
+            <ul class="mobile-tab">
+              <li><a href="#home"><i class='fa fa-home'></i></a>
+                <span class="tooltiptext">Home</span>
+            </li>
+            <li><a href="#packages"><i class="fa fa-map-o" aria-hidden="true"></i></a>
+              <span class="tooltiptext">Destinations</span>
+            </li>
+            <li ><a href="#"><i class="material-icons">shopping_cart</i></a>
+                <span class="tooltiptext">Cart</span>
+            </li>
+              <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <span class="tooltiptext">Profile</span>
+            </li>
+            </ul>
+        </div>
+     
+    </nav>
+    <script type="text/javascript">
+          window.addEventListener("scroll",function(){
+            var nav =document.querySelector("nav");
+            nav.classList.toggle("sticky",window.scrollY>50);
+              })
+    </script>
+    
+<button onclick="topFunction()" id="myBtn"  class="scroll"><i class="material-icons">keyboard_arrow_up</i></button>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  <section id="home" class="home">
+      <div class="search-box">
+        <button class="btn-search"><i class="fa fa-search"></i></button>
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+    
+      <div class="swiper-container">
+
+        <!-- swiper slides -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:linear-gradient(50deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.6));">
+              <div class="video-container">
+                <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+              </div>
+                <div class="headline">
+                  <h1>Adventure is Worthwhile</h1>
+                  <p>Dicover new places with us, Adventure awaits</p>
+                  <a href="#packages" class="discover-btn">discover more</a>
+                </div>
+                    
+            </div>
+            
+            <div class="swiper-slide" style="background:linear-gradient(50deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.6));">
+              <div class="video-container">
+                <video src="images/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+              </div>
+                <div class="headline">
+                  <h1>Adventure is Worthwhile</h1>
+                  <p class="tagline">Dicover new places with us, Adventure awaits</p>
+                  <a href="#packages" class="discover-btn">discover more</a>
+                </div>
+                    
+            </div>
+            <div class="swiper-slide" style="background:linear-gradient(50deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.6));">
+              <div class="video-container">
+                <video src="images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+              </div>
+                <div class="headline">
+                  <h1>Adventure is Worthwhile</h1>
+                  <p>Dicover new places with us, Adventure awaits</p>
+                  <a href="#packages" class="discover-btn">discover more</a>
+                 </div>
+                    
+            </div>
+            <div class="swiper-slide" style="background:linear-gradient(50deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.6));">
+              <div class="video-container">
+                <video src="images/vid-4.mp4" id="video-slider" loop autoplay muted></video>
+              </div>
+                <div class="headline">
+                  <h1>Adventure is Worthwhile</h1>
+                  <p>Dicover new places with us, Adventure awaits</p>
+                  <a href="#packages" class="discover-btn">discover more</a>
+                    </div>
+                    
+            </div>
+            <div class="swiper-slide" style="background:linear-gradient(50deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.6));">
+              <div class="video-container">
+                <video src="images/vid-5.mp4" id="video-slider" loop autoplay muted></video>
+              </div>
+                <div class="headline">
+                  <h1>Adventure is Worthwhile</h1>
+                  <p>Dicover new places with us, Adventure awaits</p>
+                  <a href="#packages" class="discover-btn">discover more</a>
+                  </div>     
+            </div>
+     </div>
+        <!-- !swiper slides -->
+        <!-- next / prev arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      
+    </div>
+    <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js'></script><script  src="./script.js"></script>
+  </section>
+
+<section class="recently-viewed">
+  <h2>Recently Viewed</h2>
+  <div class="viewed-box">
+    <div class="view-items">
+      <img src="images/p-6.jpg" href="#"> 
+      <div class="item-details">
+        <h4><i id="map" class="fa fa-map-marker"></i> Eypt </h4>
+          <div class="stars">
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="price"> $90.00 <span>$120.00</span> </div>   
+        
+      </div>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="view-items">
+      <img src="images/p-1.jpg"  href="#" >
+      <div class="item-details">
+        <h4><i id="map" class="fa fa-map-marker"></i> Mumbai </h4>
+          <div class="stars">
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="price">$90.00 <span>$120.00</span> </div>   
+      </div>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="view-items">
+      <img src="images/p-5.jpg"  href="#" >
+      <div class="item-details">
+        <h4><i id="map" class="fa fa-map-marker"></i> Tokyo </h4>
+       
+        <div class="stars">
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="price">$90.00 <span>$120.00</span> </div>   
+      </div>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="view-items">
+      <img src="images/p-5.jpg"  href="#" >
+      <div class="item-details">
+        <h4><i id="map" class="fa fa-map-marker"></i> Tokyo </h4>
+       
+        <div class="stars">
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star checked"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="price">$90.00 <span>$120.00</span> </div>   
+      </div>
+      <button class="book-btn">Book Now</button>
+    </div>
+ </div>
+</section>
+
+<!-- packages section starts  -->
+<section class="packages" id="packages">
+
+  <h1 class="heading">
+      <span>p</span>
+      <span>a</span>
+      <span>c</span>
+      <span>k</span>
+      <span>a</span>
+      <span>g</span>
+      <span>e</span>
+      <span>s</span>
+  </h1>
+
+  <div class="box-container">
+      <div class="box">
+         <img src="images/p-1.jpg" alt="">
+          <div class="content">
+              <h4><i id="map" class="fa fa-map-marker"></i> mumbai </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+              <div class="stars">
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star checked"></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+              </div>
+              <div class="price"> $90.00 <span>$120.00</span> </div>
+              <div class="view-like">
+                <a class="view-details" href="./destination-details.html"><i class="fa fa-eye"></i> View Details</a>
+                <div class="like-wrapper">
+                  <a href="javascript:void(0);" class="like-button">
+                    <i class="material-icons not-liked bouncy">favorite_border</i>
+                    <i class="material-icons is-liked bouncy">favorite</i>
+                    <span class="like-overlay"></span>
+                  </a>
+              </div>
+              </div>
+              <button class="book-btn">Book Now</button>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <img src="images/p-2.jpg" alt="">
+          <div class="content">
+              <h4> <i id="map" class="fa fa-map-marker"></i> hawaii </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+              <div class="stars">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+            </div>
+              <div class="price"> $90.00 <span>$120.00</span> </div>
+              <div class="view-like">
+                <a class="view-details" href="./destination-details.html"><i class="fa fa-eye"></i> View Details</a>
+                <div class="like-wrapper">
+                  <a href="javascript:void(0);" class="like-button">
+                    <i class="material-icons not-liked bouncy">favorite_border</i>
+                    <i class="material-icons is-liked bouncy">favorite</i>
+                    <span class="like-overlay"></span>
+                  </a>
+              </div>
+              </div>
+              <button class="book-btn">Book Now</button>
+          </div>
+      </div>
+
+      <div class="box">
+          <img src="images/p-3.jpg" alt="">
+          <div class="content">
+              <h4> <i id="map" class="fa fa-map-marker"></i> sydney </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+              <div class="stars">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+              <div class="price"> $90.00 <span>$120.00</span> </div>
+              <div class="view-like">
+                <a class="view-details" href="./destination-details.html"><i class="fa fa-eye"></i> View Details</a>
+                <div class="like-wrapper">
+                  <a href="javascript:void(0);" class="like-button">
+                    <i class="material-icons not-liked bouncy">favorite_border</i>
+                    <i class="material-icons is-liked bouncy">favorite</i>
+                    <span class="like-overlay"></span>
+                  </a>
+              </div>
+              </div>
+              <button class="book-btn">Book Now</button>
+          </div>
+      </div>
+
+      <div class="box">
+          <img src="images/p-4.jpg" alt="">
+          <div class="content">
+              <h4><i id="map" class="fa fa-map-marker"></i> paris </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+              <div class="stars">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+              <div class="price"> $90.00 <span>$120.00</span> </div>
+              <div class="view-like">
+                <a class="view-details" href="./destination-details.html"><i class="fa fa-eye"></i> View Details</a>
+                <div class="like-wrapper">
+                  <a href="javascript:void(0);" class="like-button">
+                    <i class="material-icons not-liked bouncy">favorite_border</i>
+                    <i class="material-icons is-liked bouncy">favorite</i>
+                    <span class="like-overlay"></span>
+                  </a>
+              </div>
+              </div>
+              <button class="book-btn">Book Now</button>
+          </div>
+      </div>
+
+      <div class="box">
+          <img src="images/p-5.jpg" alt="">
+          <div class="content">
+              <h4><i id="map" class="fa fa-map-marker"></i> tokyo </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+              <div class="stars">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+              <div class="price"> $90.00 <span>$120.00</span> </div>
+              <div class="view-like">
+                <a class="view-details" href="./destination-details.html"><i class="fa fa-eye"></i> View Details</a>
+                <div class="like-wrapper">
+                  <a href="javascript:void(0);" class="like-button">
+                    <i class="material-icons not-liked bouncy">favorite_border</i>
+                    <i class="material-icons is-liked bouncy">favorite</i>
+                    <span class="like-overlay"></span>
+                  </a>
+              </div>
+              </div>
+              <button class="book-btn">Book Now</button>
+          </div>
+      </div>
+
+      <div class="box">
+          <img src="images/p-6.jpg" alt="">
+          <div class="content">
+              <h4><i id="map" class="fa fa-map-marker"></i> eypt </h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+              <div class="stars">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+              <div class="price"> $90.00 <span>$120.00</span> </div>
+              <div class="view-like">
+                <a class="view-details" href="./destination-details.html"><i class="fa fa-eye"></i> View Details</a>
+                <div class="like-wrapper">
+                  <a href="javascript:void(0);" class="like-button">
+                    <i class="material-icons not-liked bouncy">favorite_border</i>
+                    <i class="material-icons is-liked bouncy">favorite</i>
+                    <span class="like-overlay"></span>
+                  </a>
+              </div>
+              </div>
+              <button class="book-btn">Book Now</button>
+          </div>
+      </div>
+
+  </div>
+  <div class="view-more"><a class="view-more-btn" href="#">View More</a></div>
+  
+</section>
+
+<!-- packages section ends -->
+
+<section class="services" id="services">
+  <h1 class="heading">
+      <span>s</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+  </h1>
+
+  <div class="box-container">
+      <div class="box">
+          <img src="images/s1.png">
+          <h3>Affordable Hotels</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+      </div>
+      <div class="box">
+        <img src="images/s2.png">
+          <h3>Food and Drinks</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+      </div>
+      <div class="box">
+        <img src="images/s3.png">
+          <h3>Safty Guide</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+      </div>
+      <div class="box">
+          <img src="images/s4.png">
+          <h3>Around the World</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+      </div>
+      <div class="box">
+        <img src="images/s5.png">
+          <h3>Fastest Travel</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+      </div>
+      <div class="box">
+        <img src="images/s6.png">
+          <h3>Adventures</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+      </div>
+
+  </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="offers" id="offers">
+
+  <h1 class="heading">
+      <span>E</span>
+      <span>x</span>
+      <span>c</span>
+      <span>l</span>
+      <span>u</span>
+      <span>s</span>
+      <span>i</span>
+      <span>v</span>
+      <span>e</span>
+      <span class="space"></span>
+      <span>d</span>
+      <span>e</span>
+      <span>a</span>
+      <span>l</span>
+      <span>s</span>
+  </h1>
+  <p id="o">Checkout for the best discounts and deals here</p>
+  <div class="o-card">
+    <div class="offer">
+      <h4>Get Upto 5% Cashback when you complete an experience</h4>
+      <p id="coupon"><i id="c-icon" class="fa fa-ticket"></i>Coupon Code: 2EFDFD</p>
+   </div>
+  <div class="offer">
+      <h4>Book any Experience and Get 30% off + 20% Off</h4>
+      <p id="coupon"><i id="c-icon" class="fa fa-ticket"></i>Coupon Code: A2FDFD</p>
+  </div>
+  <div class="offer">
+    <h4>Book any Experience and Get 30% off + 20% Off</h4>
+    <p id="coupon"><i id="c-icon" class="fa fa-ticket"></i>Coupon Code: A2FDFD</p>
+</div>
+<div class="offer">
+  <h4>Book any Experience and Get 30% off + 20% Off</h4>
+  <p id="coupon"><i id="c-icon" class="fa fa-ticket"></i>Coupon Code: A2FDFD</p>
+</div>
+</div>
+  
+         
+   
+</section>
+
+<!-- gallery section ends -->
+<section class="review" id="review">
+
+  <h1 class="heading">
+      <span>T</span>
+      <span>E</span>
+      <span>S</span>
+      <span>T</span>
+      <span>I</span>
+      <span>M</span>
+      <span>O</span>
+      <span>N</span>
+      <span>I</span>
+      <span>A</span>
+      <span>L</span>
+      <span>S</span>
+  </h1>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="customers-testimonials" class="owl-carousel">     
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/pic2.png" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/profile-2.jpg" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/profile-1.jpg" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/pic4.png" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/pic1.png" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/pic2.png" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect">
+                <img class="img-circle" src="images/pic3.png" alt="">
+                <h4 class="testimonial-name">EMILIANO AQUILANI</h4>
+                <p><i class="fa fa-quote-left"></i>Awesome app for booking camps and adventure at an affordable price</p> 
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+ </div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script><script  src="./script.js"></script>
+  
+  </section>
+  <section class="about" id="about">
+
+    <h1 class="heading">
+        <span>A</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>u</span>
+        <span>s</span>
+    </h1>
+    <p class="about-us">
+      From 2012 to 2017, Our leadership team worked with many corporates, colleges, schools and institutions to organise adventure group trips and in these 6 years we understood HOTELS are old and unconventional and people are looking for more experimental places to spend their vacations but hard to discover.
+    <br/><br/>After intensive ground work for more than 2 years, we discovered a lot of Camping Sites, Igloos, Homestays, Cottages exist at most uncrowded and virgin destinations , which can't be discovered if you have never been there. We thought to make these stays available by making it more organised keeping in mind amenities, safety and cleanliness.</p>
+    <h2>Things we offer to our Customers</h2>
+    <div class="features">
+      <div class="card">
+        <img src="images/t-f1.png">
+        <p>Unique Stays</p>
+        
+      </div>
+      <div class="card">
+       <img src="images/t-f2.png">
+       <p>Adventure Sports</p>    
+     </div> 
+     <div class="card">
+        <img src="images/f3.png">
+        <p>Lowest Prices</p>
+      </div>
+      <div class="card">
+        <img src="images/f4.png">
+        <p>Verified and Safe</p>
+      </div>
+      <div class="card">
+        <img src="images/f5.png">
+        <p>24 x 7 Support</p>
+      </div>
+    </div>
+    </section>
+    
+<footer class="footer">
+
+  <div class="box-container">
+    <div class="box">
+      <h3>Stay Connected With Us</h3>
+      <i id="s-icon" class="fa fa-facebook-square" style="color:#4267B2"></i>
+      <i id="s-icon" class="fa fa-twitter-square"  style="color:#1DA1F2"></i>
+      <i  id="s-icon" class="fa fa-linkedin-square"  style="color:#0077b5"></i>
+      <i  id="s-icon" class="fa fa-instagram" style="color:#e1306c"></i>
+      <i  id="s-icon" class="fa fa-whatsapp"  style="color:#25D366"></i>
+      <h3>Address</h3>
+      <p class="address">
+        Corporate Office :
+        Doon House, B-275(A),<br>First floor Sector-57,<br>Shushant Lok 3 Near Hong Kong Bazzar,<br>Gurugram Pin 122001, Haryana.
+       <br><i class="fa fa-phone"></i> +91-9122588799</p>
+    </div>
+      <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#packages">Destinations</a>
+          <a href="#services">Services</a>
+          <a href="#offers">Exclusive Deals</a>
+          <a href="#review">Testimonials</a>
+          <a href="#about">About us</a>
+      </div>
+      <div class="box">
+        <h3>Discuss Your Queries with us</h3>
+        <form method="POST" action="">
+          <input type="text" name="email" id="email" placeholder="Email Address">
+          <textarea name="query" id="query" cols="30" rows="10" placeholder="Any Query.."></textarea>
+          <button class="query-btn" name="send">Send</button>
+        </form>
+        </div>
+
+     
+
+  </div>
+
+  <p class="credit"> created by <span> Nikita </span> | all rights reserved! </p>
+
+</footer>
+
+</body>
+</html>
